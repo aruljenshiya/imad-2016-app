@@ -115,3 +115,20 @@ var port = 8080; // Use 8080 for local development because you might already hav
 app.listen(8080, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
+//Submit name
+var nameInput = document.getElementById("name");
+var name= nameInput.value;
+var submit=document.getElementById("submit-btn");
+submit.onclick = function () {
+    //Make a request to the server ans send the name
+    
+    //Capture a list of name and render it as a list 
+    var names=["name1","name2","name3","name4"];
+    var list="";
+    for(var i=0; i<name.length; i++) {
+        list += "<li>" + names[i] +"<li>";
+        
+    }
+    var ul=document.getElementById("namelist");
+    ul.innerHTML=list;
+};
