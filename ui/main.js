@@ -21,5 +21,4 @@ button.onclick =function () {
  //Make a request
  request.open('GET','http://aruljenshiya.imad.hasura-app.io/counter',true);
  request.send(null);
- 
-};
+ };
