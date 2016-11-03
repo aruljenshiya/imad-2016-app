@@ -1,5 +1,5 @@
 //counter code
-var button=document.getElementById('counter');
+var button=document.getElementById("counter");
 
 
 button.onclick =function () {
@@ -12,7 +12,7 @@ button.onclick =function () {
           // Take some action
           if(request.status==200) {
              var counter= request.responseText;
-              var span=document.getElementById('count');
+              var span=document.getElementById("count");
               span.innerHTML=counter.toString();
           }
       }
